@@ -1,6 +1,6 @@
 import * as cdk from 'aws-cdk-lib'
 import { Template } from 'aws-cdk-lib/assertions'
-import { P6CDKGithubOidcProvider } from '../src/'
+import { P6CDKGithubOidcProvider } from '../src'
 
 // Test: Snapshot test for GithubOidcProvider Construct
 it('snapshot test for GithubOidcProvider', () => {
@@ -10,7 +10,7 @@ it('snapshot test for GithubOidcProvider', () => {
 
   // Instantiate the GithubOidcProvider construct
   new P6CDKGithubOidcProvider(stack, 'GithubOidcTest', {
-    repo: 'p6m7g8/p6m7g8.com',
+    repo: 'p6m7g8/p6m7g8.org',
   })
 
   // Generate the CloudFormation template for the stack
