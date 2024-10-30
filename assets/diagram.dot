@@ -55,7 +55,7 @@ digraph "Diagram" {
         "VisualizeStack/MyWebsite/GithubOidc" [
           label = " GithubOidc",
           fontsize = 12,
-          image = "/Users/philip/.p6/p6m7g8/p6-cdk-github-oidc-provider/node_modules/.pnpm/cdk-dia@0.11.0_@aws-cdk+cloud-assembly-schema@38.0.1_@aws-cdk+cx-api@1.204.0_@aws-cdk+cloud-a_jfuice6m4mq3crypw5nsefyri4/node_modules/cdk-dia/icons/aws/Service/Arch_Management-Governance/64/Arch_AWS-CloudFormation_64@5x.png",
+          image = "/Users/pgollucci/.p6/p6m7g8/p6-cdk-github-oidc-provider/node_modules/cdk-dia/icons/aws/Service/Arch_Management-Governance/64/Arch_AWS-CloudFormation_64@5x.png",
           imagescale = "true",
           imagepos = "tc",
           penwidth = "0",
@@ -68,7 +68,7 @@ digraph "Diagram" {
         "VisualizeStack/MyWebsite/GithubOidcRole" [
           label = " GithubOidcRole",
           fontsize = 12,
-          image = "/Users/philip/.p6/p6m7g8/p6-cdk-github-oidc-provider/node_modules/.pnpm/cdk-dia@0.11.0_@aws-cdk+cloud-assembly-schema@38.0.1_@aws-cdk+cx-api@1.204.0_@aws-cdk+cloud-a_jfuice6m4mq3crypw5nsefyri4/node_modules/cdk-dia/icons/aws/Service/Arch_Security-Identity-Compliance/64/Arch_AWS-Identity-and-Access-Management_64@5x.png",
+          image = "/Users/pgollucci/.p6/p6m7g8/p6-cdk-github-oidc-provider/node_modules/cdk-dia/icons/aws/Service/Arch_Security-Identity-Compliance/64/Arch_AWS-Identity-and-Access-Management_64@5x.png",
           imagescale = "true",
           imagepos = "tc",
           penwidth = "0",

@@ -241,7 +241,7 @@ exports[`snapshot test for GithubOidcProvider 1`] = `
                   "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
                 },
                 "StringLike": {
-                  "token.actions.githubusercontent.com:sub": "repo:p6m7g8/p6m7g8.com:*",
+                  "token.actions.githubusercontent.com:sub": "repo:p6m7g8/p6m7g8.org:*",
                 },
               },
               "Effect": "Allow",
