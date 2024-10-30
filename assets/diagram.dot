@@ -40,48 +40,19 @@ digraph "Diagram" {
         style = "filled,rounded",
         fillcolor = "#e4e4e4",
       ];
-      subgraph "cluster-SubGraph.MyWebsite" {
-        graph [
-          label = "MyWebsite",
-          labelloc = "b",
-          labeljust = "l",
-          margin = "10",
-          fontsize = "16",
-          penwidth = "2",
-          pencolor = "#888888",
-          style = "filled,rounded",
-          fillcolor = "#d6d6d6",
-        ];
-        "VisualizeStack/MyWebsite/GithubOidc" [
-          label = " GithubOidc",
-          fontsize = 12,
-          image = "/Users/pgollucci/.p6/p6m7g8/p6-cdk-github-oidc-provider/node_modules/cdk-dia/icons/aws/Service/Arch_Management-Governance/64/Arch_AWS-CloudFormation_64@5x.png",
-          imagescale = "true",
-          imagepos = "tc",
-          penwidth = "0",
-          shape = "node",
-          fixedsize = "true",
-          labelloc = "b",
-          width = 1.2,
-          height = 1.466,
-        ];
-        "VisualizeStack/MyWebsite/GithubOidcRole" [
-          label = " GithubOidcRole",
-          fontsize = 12,
-          image = "/Users/pgollucci/.p6/p6m7g8/p6-cdk-github-oidc-provider/node_modules/cdk-dia/icons/aws/Service/Arch_Security-Identity-Compliance/64/Arch_AWS-Identity-and-Access-Management_64@5x.png",
-          imagescale = "true",
-          imagepos = "tc",
-          penwidth = "0",
-          shape = "node",
-          fixedsize = "true",
-          labelloc = "b",
-          width = 1.2,
-          height = 1.466,
-        ];
-      }
+      "VisualizeStack/MyWebsite/GithubOidcRole" [
+        label = " GithubOidcRole",
+        fontsize = 12,
+        image = "/Users/pgollucci/.p6/p6m7g8/p6-cdk-github-oidc-provider/node_modules/cdk-dia/icons/aws/Service/Arch_Security-Identity-Compliance/64/Arch_AWS-Identity-and-Access-Management_64@5x.png",
+        imagescale = "true",
+        imagepos = "tc",
+        penwidth = "0",
+        shape = "node",
+        fixedsize = "true",
+        labelloc = "b",
+        width = 1.2,
+        height = 1.466,
+      ];
     }
   }
-  "VisualizeStack/MyWebsite/GithubOidcRole" -> "VisualizeStack/MyWebsite/GithubOidc" [
-    dir = "both",
-  ];
 }

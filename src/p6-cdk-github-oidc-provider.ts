@@ -1,3 +1,4 @@
+import { Stack } from 'aws-cdk-lib'
 import * as iam from 'aws-cdk-lib/aws-iam'
 import { Construct } from 'constructs'
 
@@ -11,8 +12,12 @@ export class P6CDKGithubOidcProvider extends Construct {
   constructor(scope: Construct, id: string, props: IP6CDKGithubOidcProviderProps) {
     super(scope, id)
 
+    const providerArn = `arn:aws:iam::${Stack.of(this).account}:oidc-provider/token.actions.githubusercontent.com`
+
+    const existingOidcProvider = iam.OpenIdConnectProvider.fromOpenIdConnectProviderArn(this, 'ExistingOidcProvider', providerArn)
+
     // Create the OIDC Provider for GitHub
-    const oidcProvider = new iam.OpenIdConnectProvider(this, 'GithubOidc', {
+    const oidcProvider = existingOidcProvider ?? new iam.OpenIdConnectProvider(this, 'GithubOidc', {
       url: 'https://token.actions.githubusercontent.com',
       clientIds: ['sts.amazonaws.com'],
       thumbprints: ['ffffffffffffffffffffffffffffffffffffffff'],
