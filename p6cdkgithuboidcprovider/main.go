@@ -12,6 +12,7 @@ func init() {
 		"p6-cdk-github-oidc-provider.IP6CDKGithubOidcProviderProps",
 		reflect.TypeOf((*IP6CDKGithubOidcProviderProps)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "policies", GoGetter: "Policies"},
 			_jsii_.MemberProperty{JsiiProperty: "repo", GoGetter: "Repo"},
 		},
 		func() interface{} {
