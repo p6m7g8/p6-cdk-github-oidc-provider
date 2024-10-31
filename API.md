@@ -92,6 +92,7 @@ Any object.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#p6-cdk-github-oidc-provider.P6CDKGithubOidcProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#p6-cdk-github-oidc-provider.P6CDKGithubOidcProvider.property.openIdConnectProviderArn">openIdConnectProviderArn</a></code> | <code>aws-cdk-lib.Arn</code> | *No description.* |
 
 ---
 
@@ -104,6 +105,16 @@ public readonly node: Node;
 - *Type:* constructs.Node
 
 The tree node.
+
+---
+
+##### `openIdConnectProviderArn`<sup>Required</sup> <a name="openIdConnectProviderArn" id="p6-cdk-github-oidc-provider.P6CDKGithubOidcProvider.property.openIdConnectProviderArn"></a>
+
+```typescript
+public readonly openIdConnectProviderArn: Arn;
+```
+
+- *Type:* aws-cdk-lib.Arn
 
 ---
 
