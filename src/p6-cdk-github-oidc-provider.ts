@@ -3,6 +3,7 @@ import { Construct } from 'constructs'
 
 export interface IP6CDKGithubOidcProviderProps {
   readonly repo: string
+  readonly policies?: iam.IManagedPolicy[]
 }
 
 export class P6CDKGithubOidcProvider extends Construct {
@@ -19,6 +20,7 @@ export class P6CDKGithubOidcProvider extends Construct {
         thumbprints: ['ffffffffffffffffffffffffffffffffffffffff'],
       })
     }
+
     // Create the IAM Role for GitHub OIDC Authentication
     const role = new iam.Role(this, 'GithubOidcRole', {
       assumedBy: new iam.FederatedPrincipal(
@@ -34,6 +36,11 @@ export class P6CDKGithubOidcProvider extends Construct {
         'sts:AssumeRoleWithWebIdentity',
       ),
     })
+
+    // Attach provided policies to the role
+    if (props.policies) {
+      props.policies.forEach(policy => role.addManagedPolicy(policy))
+    }
 
     // Expose the role ARN
     this.roleArn = role.roleArn
