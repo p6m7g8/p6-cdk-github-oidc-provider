@@ -140,6 +140,7 @@ public readonly roleArn: string;
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#p6-cdk-github-oidc-provider.IP6CDKGithubOidcProviderProps.property.repo">repo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#p6-cdk-github-oidc-provider.IP6CDKGithubOidcProviderProps.property.policies">policies</a></code> | <code>aws-cdk-lib.aws_iam.IManagedPolicy[]</code> | *No description.* |
 
 ---
 
@@ -150,6 +151,16 @@ public readonly repo: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `policies`<sup>Optional</sup> <a name="policies" id="p6-cdk-github-oidc-provider.IP6CDKGithubOidcProviderProps.property.policies"></a>
+
+```typescript
+public readonly policies: IManagedPolicy[];
+```
+
+- *Type:* aws-cdk-lib.aws_iam.IManagedPolicy[]
 
 ---
 
