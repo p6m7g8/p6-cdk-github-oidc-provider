@@ -16,17 +16,13 @@ func validateP6CDKGithubOidcProvider_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateNewP6CDKGithubOidcProviderParameters(scope constructs.Construct, id *string, props IP6CDKGithubOidcProviderProps) error {
+func validateNewP6CDKGithubOidcProviderParameters(scope constructs.Construct, id *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}
 
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
-	}
-
-	if props == nil {
-		return fmt.Errorf("parameter props is required, but nil was provided")
 	}
 
 	return nil

@@ -8,7 +8,7 @@ func validateP6CDKGithubOidcProvider_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateNewP6CDKGithubOidcProviderParameters(scope constructs.Construct, id *string, props IP6CDKGithubOidcProviderProps) error {
+func validateNewP6CDKGithubOidcProviderParameters(scope constructs.Construct, id *string) error {
 	return nil
 }
 
