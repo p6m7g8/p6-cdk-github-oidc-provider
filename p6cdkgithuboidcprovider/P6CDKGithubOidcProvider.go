@@ -4,6 +4,7 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/p6m7g8/p6-cdk-github-oidc-provider/p6cdkgithuboidcprovider/jsii"
 
+	"github.com/aws/aws-cdk-go/awscdk/v2"
 	"github.com/aws/constructs-go/constructs/v10"
 	"github.com/p6m7g8/p6-cdk-github-oidc-provider/p6cdkgithuboidcprovider/internal"
 )
@@ -12,6 +13,7 @@ type P6CDKGithubOidcProvider interface {
 	constructs.Construct
 	// The tree node.
 	Node() constructs.Node
+	OpenIdConnectProviderArn() awscdk.Arn
 	// Returns a string representation of this construct.
 	ToString() *string
 }
@@ -26,6 +28,16 @@ func (j *jsiiProxy_P6CDKGithubOidcProvider) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_P6CDKGithubOidcProvider) OpenIdConnectProviderArn() awscdk.Arn {
+	var returns awscdk.Arn
+	_jsii_.Get(
+		j,
+		"openIdConnectProviderArn",
 		&returns,
 	)
 	return returns

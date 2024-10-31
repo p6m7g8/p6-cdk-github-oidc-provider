@@ -13,6 +13,7 @@ func init() {
 		reflect.TypeOf((*P6CDKGithubOidcProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "openIdConnectProviderArn", GoGetter: "OpenIdConnectProviderArn"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
