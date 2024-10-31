@@ -1,6 +1,5 @@
 import * as cdk from 'aws-cdk-lib'
 import { Template } from 'aws-cdk-lib/assertions'
-import * as iam from 'aws-cdk-lib/aws-iam'
 import { P6CDKGithubOidcProvider } from '../src'
 
 // Test: Snapshot test for GithubOidcProvider Construct
@@ -10,12 +9,7 @@ it('snapshot test for GithubOidcProvider', () => {
   const stack = new cdk.Stack(app, 'TestStack')
 
   // Instantiate the GithubOidcProvider construct
-  new P6CDKGithubOidcProvider(stack, 'GithubOidcTest', {
-    repo: 'p6m7g8/p6m7g8.org',
-    policies: [
-      iam.ManagedPolicy.fromAwsManagedPolicyName('AdministratorAccess'),
-    ],
-  })
+  new P6CDKGithubOidcProvider(stack, 'GithubOidcTest')
 
   // Generate the CloudFormation template for the stack
   const template = Template.fromStack(stack)
