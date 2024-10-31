@@ -9,14 +9,13 @@
 ```typescript
 import { P6CDKGithubOidcProvider } from 'p6-cdk-github-oidc-provider'
 
-new P6CDKGithubOidcProvider(scope: Construct, id: string, props: IP6CDKGithubOidcProviderProps)
+new P6CDKGithubOidcProvider(scope: Construct, id: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#p6-cdk-github-oidc-provider.P6CDKGithubOidcProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
 | <code><a href="#p6-cdk-github-oidc-provider.P6CDKGithubOidcProvider.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#p6-cdk-github-oidc-provider.P6CDKGithubOidcProvider.Initializer.parameter.props">props</a></code> | <code><a href="#p6-cdk-github-oidc-provider.IP6CDKGithubOidcProviderProps">IP6CDKGithubOidcProviderProps</a></code> | *No description.* |
 
 ---
 
@@ -29,12 +28,6 @@ new P6CDKGithubOidcProvider(scope: Construct, id: string, props: IP6CDKGithubOid
 ##### `id`<sup>Required</sup> <a name="id" id="p6-cdk-github-oidc-provider.P6CDKGithubOidcProvider.Initializer.parameter.id"></a>
 
 - *Type:* string
-
----
-
-##### `props`<sup>Required</sup> <a name="props" id="p6-cdk-github-oidc-provider.P6CDKGithubOidcProvider.Initializer.parameter.props"></a>
-
-- *Type:* <a href="#p6-cdk-github-oidc-provider.IP6CDKGithubOidcProviderProps">IP6CDKGithubOidcProviderProps</a>
 
 ---
 
@@ -99,7 +92,6 @@ Any object.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#p6-cdk-github-oidc-provider.P6CDKGithubOidcProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#p6-cdk-github-oidc-provider.P6CDKGithubOidcProvider.property.roleArn">roleArn</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -115,52 +107,7 @@ The tree node.
 
 ---
 
-##### `roleArn`<sup>Required</sup> <a name="roleArn" id="p6-cdk-github-oidc-provider.P6CDKGithubOidcProvider.property.roleArn"></a>
-
-```typescript
-public readonly roleArn: string;
-```
-
-- *Type:* string
-
----
 
 
 
-
-## Protocols <a name="Protocols" id="Protocols"></a>
-
-### IP6CDKGithubOidcProviderProps <a name="IP6CDKGithubOidcProviderProps" id="p6-cdk-github-oidc-provider.IP6CDKGithubOidcProviderProps"></a>
-
-- *Implemented By:* <a href="#p6-cdk-github-oidc-provider.IP6CDKGithubOidcProviderProps">IP6CDKGithubOidcProviderProps</a>
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#p6-cdk-github-oidc-provider.IP6CDKGithubOidcProviderProps.property.repo">repo</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#p6-cdk-github-oidc-provider.IP6CDKGithubOidcProviderProps.property.policies">policies</a></code> | <code>aws-cdk-lib.aws_iam.IManagedPolicy[]</code> | *No description.* |
-
----
-
-##### `repo`<sup>Required</sup> <a name="repo" id="p6-cdk-github-oidc-provider.IP6CDKGithubOidcProviderProps.property.repo"></a>
-
-```typescript
-public readonly repo: string;
-```
-
-- *Type:* string
-
----
-
-##### `policies`<sup>Optional</sup> <a name="policies" id="p6-cdk-github-oidc-provider.IP6CDKGithubOidcProviderProps.property.policies"></a>
-
-```typescript
-public readonly policies: IManagedPolicy[];
-```
-
-- *Type:* aws-cdk-lib.aws_iam.IManagedPolicy[]
-
----
 
